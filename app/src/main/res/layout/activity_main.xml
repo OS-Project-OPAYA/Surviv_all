@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/main">
+
+    <!-- Header -->
+    <View
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/header" />
+
+    <!-- logo -->
+    <TextView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="SURVIV-ALL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <!-- searchbar -->
+    <RelativeLayout
+        android:id="@+id/searchbar"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/searchbar">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </SearchView>
+
+
+    </RelativeLayout>
+
+    <!-- bottom -->
+    <View
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/header" />
+
+    <!-- menubar -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/selector_view"
+        android:drawableTop="@drawable/call"
+        android:drawablePadding="4dp"
+        android:text="긴급전화"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@id/button1"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/selector_view"
+        android:drawableTop="@drawable/shelter"
+        android:drawablePadding="4dp"
+        android:text="대피소"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@id/button2"
+        android:background="@drawable/selector_view"
+        android:drawableTop="@drawable/guide"
+        android:drawablePadding="4dp"
+        android:text="재난 수칙"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@id/button3"
+        android:background="@drawable/selector_view"
+        android:drawableTop="@drawable/board"
+        android:drawablePadding="4dp"
+        android:text="게시판"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
+
+
